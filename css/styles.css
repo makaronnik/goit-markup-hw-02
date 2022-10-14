@@ -7,11 +7,14 @@
   --text-color-logo: #000;
   --text-color-logo-footer: #fff;
   --text-color-hero: #fff;
-  --text-color-button-text: #fff;
-  --text-color-button-active: #188ce8;
+  --text-color-button-text-light: #fff;
+  --text-color-button-text-dark: #212121;
   --text-color-contacts: rgba(255, 255, 255, 0.6);
   --text-color-address: #fff;
   --bg-color-dark: #2f303a;
+  --bg-color-button-primary: #f5f4fa;
+  --bg-color-button-accent-primary: #2196f3;
+  --bg-color-button-accent-secondary: #188ce8;
 }
 
 body {
@@ -68,6 +71,13 @@ body {
   color: var(--text-color-secondary);
 }
 
+/* Button */
+
+.button {
+  font-family: var(--font-family-primary);
+  cursor: pointer;
+}
+
 /* Hero */
 
 .hero {
@@ -84,29 +94,25 @@ body {
   color: var(--text-color-hero);
 }
 
-/* Button */
-
-.button {
+.hero__button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
-  cursor: pointer;
-  color: var(--text-color-button-text);
-  background-color: var(--text-color-accent);
-  width: 216px;
-  height: 50px;
+  color: var(--text-color-button-text-light);
+  background-color: var(--bg-color-button-accent-primary);
 }
 
-.button:hover,
-.button:focus {
-  background-color: var(--text-color-button-active);
+.hero__button:hover,
+.hero__button:focus {
+  background-color: var(--bg-color-button-accent-secondary);
 }
 
-/* Features */
+/* Features & Portfolio */
 
-.features__heading {
+.features__heading,
+.portfolio__heading {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -195,4 +201,51 @@ body {
 
 .contacts__link--address {
   color: var(--text-color-address);
+}
+
+/* Portfolio filter */
+
+.portfolio-filter {
+  text-align: center;
+  list-style: none;
+}
+
+.portfolio-filter__button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--text-color-button-text-dark);
+  background-color: var(--bg-color-button-primary);
+}
+
+.portfolio-filter__button:hover,
+.portfolio-filter__button:focus,
+.portfolio-filter__button--active {
+  color: var(--text-color-button-text-light);
+  background-color: var(--bg-color-button-accent-primary);
+}
+
+/* Portfolio cards */
+
+.portfolio-cards {
+  list-style: none;
+}
+
+.portfolio-cards__link {
+  text-decoration: none;
+  color: var(--text-color-primary);
+}
+
+.portfolio-cards__heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-cards__text {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--text-color-secondary);
 }
