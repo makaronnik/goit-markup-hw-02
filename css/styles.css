@@ -11,7 +11,9 @@
   --text-color-button-text-dark: #212121;
   --text-color-contacts: rgba(255, 255, 255, 0.6);
   --text-color-address: #fff;
+  --bg-color-primary: #fff;
   --bg-color-dark: #2f303a;
+  --bg-color-gray: #f5f4fa;
   --bg-color-button-primary: #f5f4fa;
   --bg-color-button-accent-primary: #2196f3;
   --bg-color-button-accent-secondary: #188ce8;
@@ -158,7 +160,17 @@ body {
   text-align: center;
 }
 
+/* Team */
+
+.team {
+  background-color: var(--bg-color-gray);
+}
+
 /* Team cards */
+
+.team-cards__item {
+  background-color: var(--bg-color-primary);
+}
 
 .team-cards__heading {
   font-weight: 500;
