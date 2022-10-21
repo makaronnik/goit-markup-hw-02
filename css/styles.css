@@ -76,7 +76,7 @@ body {
 /* Button */
 
 .button {
-  font-family: var(--font-family-primary);
+  font-family: inherit;
   cursor: pointer;
 }
 
